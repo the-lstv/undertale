@@ -765,6 +765,7 @@ function Engine(element, options){
                     undertale.battleAreaRect.position.y = app.screen.height - 6 - battle_buttons[0].height - 42 - 130 - 8;
 
                     let width = 20, targetWidth = app.screen.width - 64 - 8;
+
                     screen.addTicker((delta, ticker) => {
                         // Rectangle animation
                         if(width > targetWidth){
@@ -773,7 +774,7 @@ function Engine(element, options){
                         }
 
                         undertale.drawRect(width);
-                        width += delta * 8
+                        width += delta * 16
                     })
                 },
 
