@@ -120,7 +120,7 @@
             <label for="scaleToView">Scale to fit the screen</label> <br>
             <input type="checkbox" %debugMode>
             <label for="debugMode">Enable debug mode</label> <br> <br>
-            <button onclick="window.open(location.href, '', 'width=640,height=480')">Start in a window</button> <br> <br>
+            <button onclick="window.open(location.href, '', `width=${app.screen.width},height=${app.screen.height}`)">Start in a window</button> <br> <br>
             <div %debugTools hidden>
                 FPS: <span .fps></span>
             </div>
